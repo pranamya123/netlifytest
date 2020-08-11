@@ -2,9 +2,10 @@ import React from 'react';
 
 import Card from '../components/Card';
 
-import devgrub from '../assets/images/devgrub.png';
-import youtube from '../assets/images/youtube.png';
-import evverest from '../assets/images/evverest.png';
+import yelp from '../assets/images/yelp.png';
+import googlemaps from '../assets/images/googlemaps.png';
+import amazonreviews from '../assets/images/amazonreviews.jpeg';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
@@ -16,26 +17,27 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: 'Project 1',
-                    subTitle: 'The cookbook for developers',
-                    imgSrc: devgrub,
-                    link: 'https://devgrub.com',
+                    title: 'Recommendation system',
+                    subTitle: 'Yelp Dataset',
+                    imgSrc: yelp,
+                    link: 'https://medium.com/@vadlamanipranamya/recommendation-system-for-yelp-dataset-5451261575e',
                     selected: false
                 },
                 {
                     id: 1,
-                    title: 'Project 2',
-                    subTitle: 'YouTube channel',
-                    imgSrc: youtube,
-                    link: 'https://www.youtube.com/channel/UCxSITxL2JbF229OGCqieVZw',
+                    title: 'My Maps App',
+                    subTitle: 'React',
+                    imgSrc: googlemaps,
+                    link: 'https://medium.com/@vadlamanipranamya/weather-in-cities-on-a-journey-using-react-32084955f41',
                     selected: false
                 },
                 {
                     id: 2,
-                    title: 'Project 3',
-                    subTitle: 'A social network for developers',
-                    imgSrc: evverest,
-                    link: 'https://github.com/garrettlove8/evverest',
+                    title: 'Sentiment Analysis',
+                    subTitle: 'Amazon dataset',
+                    imgSrc: amazonreviews,
+                    text: "For the given dataset, sentiment analysis performed on reviews with 2,3,4 stars has given the following results:- Sentiment Percentage Distribution. - Negative: 50 - Neutral: 50%",
+                    link: 'https://medium.com/@vadlamanipranamya/sentiment-analysis-on-customer-reviews-using-amazon-reviews-dataset-4357e3d72b54',
                     selected: false
                 },
             ]
