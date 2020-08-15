@@ -100,6 +100,10 @@ class ContactPage extends React.Component {
                         {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
                         {this.state.emailSent === false && <p className="d-inline err-msg">Email Not Sent</p>}
                     </Form>
+                    <div>
+                        <br></br>
+                    <b>Find me on Linkedin</b><a href="https://www.linkedin.com/in/pvadlamani1/"> https://www.linkedin.com/in/pvadlamani1/</a>
+                    </div>
                 </Content>
             </div>
         );

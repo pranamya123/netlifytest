@@ -7,8 +7,9 @@ import './App.css';
 
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
+import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
+import ExperiencePage from './pages/ExperiencePage';
 
 
 class App extends React.Component {
@@ -16,22 +17,26 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: 'Garrett Love',
+      title: 'Pranamya Vadlamani',
       headerLinks: [
         { title: 'Home', path: '/' },
-        { title: 'About', path: '/about' },
+        { title: 'Projects', path: '/projects' },
+        { title: 'Experience', path: '/experience'},
         { title: 'Contact', path: '/contact' }
       ],
       home: {
+        title: 'About Me'
+      },
+      projects: {
         title: 'Be Relentless',
         subTitle: 'Projects the make a difference',
         text: 'Checkout my projects below'
       },
-      about: {
-        title: 'About Me'
+      experience: {
+        title: 'Work Experience'
       },
       contact: {
-        title: 'Let\'s Talk'
+        title: 'Let\'s Connect'
       }
     }
   }
@@ -48,14 +53,16 @@ class App extends React.Component {
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">Home</Link>
-                <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" to="/projects">Projects</Link>
+                <Link className="nav-link" to="/experience">Work Experience</Link>
                 <Link className="nav-link" to="/contact">Contact</Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
 
-          <Route path="/" exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
-          <Route path="/about" render={() => <AboutPage title={this.state.about.title} />} />
+          <Route path="/" exact render={() => <HomePage title={this.state.home.title} />} />
+          <Route path="/projects" exact render={() => <ProjectsPage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+          <Route path="/experience" render={() => <ExperiencePage title={this.state.experience.title} />} />
           <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
           
           <Footer />
