@@ -1,12 +1,11 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import Content from '../components/Content';
-import {View} from 'react-view';
+import {Button} from 'reactstrap';
 
 function ExperiencePage(props) {
     const floatcontainer = {
         color: 'black',
-        // padding: 'rem'
     }
     const floatchild22 = {
         width: '20%',
@@ -44,12 +43,15 @@ function ExperiencePage(props) {
         padding: '10px',
         border: '2px solid white'
     }
+    const buttonStyle = {
+        margin: '50px',
+        marginRight: '42px'
+    }
     return(
         <div>
             <Hero title={props.title} />
 
              <Content>
-
                 <div style = {floatcontainer}>
 
                     <div style = {floatchild}>
@@ -58,9 +60,7 @@ function ExperiencePage(props) {
 
                     <div style = {floatchild1}>
                     <div class="blue">
-                    Designed and developed internal data visualization platform using which helps high volumes of users to design and
-                    deploy dashboards and reports. Developed an automation framework of the data visualization platform using Selenium Web driver using which
-                    efficiency of the application increased significantly.
+                    Developed and designed maintained various modern, feature rich Indiana University websites. Additionally, created, maintained and published web content using WCMS.
                     </div>
                     </div>
 
@@ -69,8 +69,8 @@ function ExperiencePage(props) {
                     <ul>
                         <li><b>Experience</b></li>
                         <li>Opportunity for professional development</li>
-                        <li>Improved Communication skills</li>
-                        <li>Volunteered for the welfare club</li> 
+                        <li>Exposure to the US work life</li>
+                        <li>Managed academics and part time job</li> 
                     </ul>
                     </div>
                     </div>
@@ -79,9 +79,8 @@ function ExperiencePage(props) {
                     <div class="blue"> 
                     <ul>
                         <li><b>Responsibilities</b></li>
-                        <li>JavaScript</li>
+                        <li>Web Content Management System</li>
                         <li>HTML and CSS</li>
-                        <li>Agile Model</li>
                     </ul>
                     </div>
                 </div>
@@ -141,9 +140,8 @@ function ExperiencePage(props) {
                     <div class="blue"> 
                     <ul>
                         <li><b>Experience</b></li>
-                        <li>Opportunity for professional development</li>
-                        <li>Improved Communication skills</li>
-                        <li>Volunteered for the welfare club</li> 
+                        <li>First time industry experience</li>
+                        <li>Adapted to the corporate life</li>
                     </ul>
                     </div>
                     </div>
@@ -158,6 +156,14 @@ function ExperiencePage(props) {
                     </ul>
                     </div>
                     </div>
+
+                <Button color="danger" style = {buttonStyle}>JavaScript</Button>{' '}
+                <Button color="primary" style = {buttonStyle}>Java</Button>{' '}
+                <Button color="success" style = {buttonStyle}>HTML</Button>{' '}
+                <Button color="info" style = {buttonStyle}>CSS</Button>{' '}
+                <Button color="danger" style = {buttonStyle}>MySQL</Button>{' '}
+                <Button color="warning" style = {buttonStyle}>Python</Button>{' '}
+                <Button color="success" style = {buttonStyle}>Selenium</Button>{' '}
                 </div>
 
             </div>
