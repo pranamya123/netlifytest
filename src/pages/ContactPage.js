@@ -102,7 +102,12 @@ class ContactPage extends React.Component {
                     </Form>
                     <div>
                         <br></br>
+                        
                     <b>Find me on Linkedin</b><a href="https://www.linkedin.com/in/pvadlamani1/"> https://www.linkedin.com/in/pvadlamani1/</a>
+                    <br></br>
+                    <b>Medium</b><a href="https://vadlamanipranamya.medium.com/"> https://vadlamanipranamya.medium.com/</a>
+                    <br></br>
+                    <b>Github</b><a href="https://github.com/pranamya123"> https://github.com/pranamya123</a>
                     </div>
                 </Content>
             </div>

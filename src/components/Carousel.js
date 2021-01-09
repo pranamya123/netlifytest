@@ -3,6 +3,7 @@ import React from 'react';
 import Card from '../components/Card';
 
 import yelp from '../assets/images/yelp.png';
+import prevue from '../assets/images/prevuelogo.png';
 import googlemaps from '../assets/images/googlemaps.png';
 import amazonreviews from '../assets/images/amazonreviews.jpeg';
 
@@ -17,18 +18,18 @@ class Carousel extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: 'Recommendation system',
-                    subTitle: 'Yelp Dataset',
-                    imgSrc: yelp,
-                    link: 'https://medium.com/@vadlamanipranamya/recommendation-system-for-yelp-dataset-5451261575e',
+                    title: 'Booking Management System',
+                    subTitle: 'React',
+                    imgSrc: prevue,
+                    link: 'https://medium.com/@vadlamanipranamya/prevue-movies-58d60af2da63',
                     selected: false
                 },
                 {
                     id: 1,
-                    title: 'My Maps App',
-                    subTitle: 'React',
-                    imgSrc: googlemaps,
-                    link: 'https://medium.com/@vadlamanipranamya/weather-in-cities-on-a-journey-using-react-32084955f41',
+                    title: 'Recommendation system',
+                    subTitle: 'Yelp Dataset',
+                    imgSrc: yelp,
+                    link: 'https://medium.com/@vadlamanipranamya/recommendation-system-for-yelp-dataset-5451261575e',
                     selected: false
                 },
                 {
